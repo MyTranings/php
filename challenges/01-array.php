@@ -18,7 +18,7 @@
 
   <div class="container mx-auto mt-4">
     <div class="p-4">
-      <p class="mb-2"><a href="/tasks/20-array-challenges.md" target="_blank" class="text-blue">Tasks readme</a></p>
+      <p class="mb-4"><a href="/tasks/20-array-challenges.md" target="_blank" class="text-blue">Tasks readme</a></p>
 
       <h2 class="text-xl mb-2">Challenge 1: Sum of an array</h2>
 

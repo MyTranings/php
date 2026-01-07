@@ -17,6 +17,8 @@
 
   <div class="container mx-auto">
     <div class="p-4 mt-4">
+      <p class="mb-4"><a href="tasks/25-array-loop-challenges.md" target="_blank">Tasks readme</a></p>
+
       <h2 class="font-semibold">Challenge 1: Multiplication Table</h2>
 
       <p>Create a multiplication table using a nested `for` loop. The table should look like this:
