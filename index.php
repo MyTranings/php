@@ -18,6 +18,7 @@
       <li><a href="/challenges/02-multi-dimensional.php">Multi-dimensional Array Challenges</a></li>
       <li><a href="/challenges/03-array-loops.php">Array Loops Challenges</a></li>
       <li><a href="/challenges/04-conditional.php">Conditional Challenges</a></li>
+      <li><a href="/challenges/05-fuzz-buzz.php">Fuzz Buzz Challenges</a></li>
     </ol>
   </nav>
 </body>
