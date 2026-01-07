@@ -8,7 +8,16 @@
 </head>
 
 <body>
+  <h1>Welcome to PHP From Scratch</h1>
 
+  <h2>Challenges</h2>
+
+  <nav>
+    <ol>
+      <li><a href="/challenges/01-array.php">Array Challenges</a></li>
+      <li><a href="/challenges/02-multi-dimensional.php">Multi-dimensional Array Challenges</a></li>
+    </ol>
+  </nav>
 </body>
 
 </html>
