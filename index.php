@@ -19,6 +19,8 @@
       <li><a href="/challenges/03-array-loops.php">Array Loops Challenges</a></li>
       <li><a href="/challenges/04-conditional.php">Conditional Challenges</a></li>
       <li><a href="/challenges/05-fuzz-buzz.php">Fuzz Buzz Challenges</a></li>
+      <li><a href="/challenges/06-names-challenge.php">Names Challenge</a></li>
+      <li><a href="/challenges/07-job-listings-challenge.php">Job Listings</a></li>
     </ol>
   </nav>
 </body>
