@@ -22,6 +22,7 @@
       <li><a href="/challenges/06-names-challenge.php">Names Challenge</a></li>
       <li><a href="/challenges/07-job-listings-challenge.php">Job Listings</a></li>
       <li><a href="/challenges/08-average-salary.php">Average Salary Challenge</a></li>
+      <li><a href="/challenges/09-format-salary-refactor-challenge.php">Format Salary Refactor Challenge</a></li>
     </ol>
   </nav>
 </body>
