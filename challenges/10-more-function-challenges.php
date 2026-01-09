@@ -6,13 +6,26 @@
   The formula to convert Fahrenheit to Celsius is: Celsius = (Fahrenheit - 32) * 5/9
 */
 
+$fahrenheitToCelsius = fn($fahrenheit) => ($fahrenheit - 32) * 5 / 9;
+
+echo 'Fahrenheit 68&degF is Celsius: ' . $fahrenheitToCelsius(68) . '&degC';
+
+echo '<br>';
+
+// Harder
+$baseTemp = 32;
+
+$fahrenheitToCelsiusHard = function ($fahrenheit) use ($baseTemp) {
+    return ($fahrenheit - $baseTemp) * 5 / 9;
+};
+
+echo 'Fahrenheit 68&degF is Celsius: ' . $fahrenheitToCelsiusHard(68) . '&degC';
 echo '<br>';
 
 /*
   Challenge 2: Print names in uppercase
   Create a function called `printNamesToUpperCase` that takes an array of names as an argument. The function should loop through the array and print each name to the screen in uppercase letters.
 */
-
 
 echo '<br>';
 
