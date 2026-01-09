@@ -27,6 +27,20 @@ echo '<br>';
   Create a function called `printNamesToUpperCase` that takes an array of names as an argument. The function should loop through the array and print each name to the screen in uppercase letters.
 */
 
+function printNamesToUpperCase($strings)
+{
+    // echo array_map(fn($name) => strtoupper($name), $strings);
+    array_map(
+        function ($name) {
+            echo strtoupper($name) . '<br>';
+        },
+        $strings
+    );
+};
+
+$names = ['Alice', 'Bob', 'Charlie', 'David'];
+printNamesToUpperCase($names);
+
 echo '<br>';
 
 /*
