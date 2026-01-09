@@ -49,3 +49,23 @@ echo '<br>';
   2. The function should return the longest word in the sentence.
   3. The output should look like this:
 */
+
+function findLongestWord($sentence)
+{
+    $words = explode(' ', $sentence);
+    $countLongestWrod = strlen($words[0]);
+    $longestWord = $words[0];
+
+    foreach ($words as $word) {
+        if (strlen($word) > $countLongestWrod) {
+            $longestWord = $word;
+            $countLongestWrod = strlen($word);
+        }
+    }
+
+    return $longestWord;
+}
+
+$sentence = 'The quick brown fox over the lazy dog';
+$longestWord = findLongestWord($sentence);
+echo $longestWord; // should print 'jumped'
