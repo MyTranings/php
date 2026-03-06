@@ -9,10 +9,6 @@ $stmt->execute();
 
 // Fetch all the posts as an associative array
 $posts = $stmt->fetchAll();
-
-// echo '</pre>';
-// var_dump($posts);
-// echo '<pre>';
 ?>
 
 <!DOCTYPE html>
@@ -43,6 +39,11 @@ $posts = $stmt->fetchAll();
       </div>
     </div>
     <?php endforeach; ?>
+
+    <div class="mt-6">
+      <a href="create.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none">Create
+        New Post</a>
+    </div>
   </div>
 </body>
 
