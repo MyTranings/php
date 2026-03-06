@@ -1,18 +1,26 @@
 <?php
 require 'database.php';
 
-// Prepare a SELECT statemnt 
-$stmt = $pdo->prepare("SELECT * FROM posts");
+$id = $_GET['id'] ?? null;
 
-// Execute the statement
-$stmt->execute();
+if (!$id) {
+  header('Location: index.php');
+  exit;
+}
 
-// Fetch all the posts as an associative array
-$posts = $stmt->fetchAll();
+$sql = "SELECT * FROM posts where id = :id";
 
-// echo '</pre>';
-// var_dump($posts);
-// echo '<pre>';
+$stmt = $pdo->prepare($sql);
+
+$params = [
+  'id' => $id
+];
+
+$stmt->execute($params);
+
+$post = $stmt->fetch();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +30,7 @@ $posts = $stmt->fetchAll();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Blog</title>
+  <title>Post One</title>
 </head>
 
 <body class="bg-gray-100">
@@ -32,17 +40,15 @@ $posts = $stmt->fetchAll();
     </div>
   </header>
   <div class="container mx-auto p-4 mt-4">
-    <?php foreach ($posts as $post) : ?>
     <div class="md my-4">
       <div class="rounded-lg shadow-md">
         <div class="p-4">
-          <h2 class="text-xl font-semibold"><a href="post.php?id=<?= $post['id'] ?>"
-              class="text-blue-500 hover:underline"><?= $post['title'] ?></a></h2>
-          <p class="text-gray-700 text-lg mt-2"><?= $post['body'] ?></p>
+          <h2 class="text-xl font-semibold"><?= $post['title'] ?></h2>
+          <p class="text-gray-700 text-lg mt-2 mb-5"><?= $post['body'] ?></p>
+          <a href="index.php">Go Back</a>
         </div>
       </div>
     </div>
-    <?php endforeach; ?>
   </div>
 </body>
 
